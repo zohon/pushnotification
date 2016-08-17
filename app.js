@@ -29,8 +29,9 @@ tokensRef.on("child_removed", function(snapshot) {
 });
 
 setInterval(function() {
-    pushAll(listTarget, 'test');
-}, 10000);
+    console.log("pushAll");
+    pushAll(listTarget, 'message');
+}, 5*60*1000); // 5 minutes
 
 
 /* SERVER */
